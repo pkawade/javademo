@@ -4,7 +4,7 @@ pipeline {
     stages{
         stage("checkout the code") {
             steps {
-                checkout scmGit(branches: [[name: "*/${params.BRANCH_NAME}"]], extensions: [], userRemoteConfigs: [[url: 'https://github.com/cloud-dev-user/java-war-project.git/']])
+                checkout scmGit(branches: [[name: "*/${params.BRANCH_NAME}"]], extensions: [], userRemoteConfigs: [[url: 'https://github.com/pkawade/javademo.git']])
             }
         }
         stage("build") {
